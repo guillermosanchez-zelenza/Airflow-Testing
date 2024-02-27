@@ -1,0 +1,16 @@
+[2024-02-12T07:20:16.545+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:16.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prueba.py for tasks to queue
+[2024-02-12T07:20:16.567+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:16.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:16.602+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-02-12T07:20:16.618+0000] {processor.py:840} INFO - DAG(s) 'hola_mundo' retrieved from /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:16.895+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:16.894+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-12T07:20:16.980+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:16.979+0000] {dag.py:3823} INFO - Setting next_dagrun for hola_mundo to 2024-02-02 00:00:00+00:00, run_after=2024-02-03 00:00:00+00:00
+[2024-02-12T07:20:17.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prueba.py took 0.497 seconds
+[2024-02-12T07:20:47.601+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:47.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prueba.py for tasks to queue
+[2024-02-12T07:20:47.612+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:47.611+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:47.739+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-02-12T07:20:47.755+0000] {processor.py:840} INFO - DAG(s) 'hola_mundo' retrieved from /opt/airflow/dags/prueba.py
+[2024-02-12T07:20:47.844+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:47.843+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-12T07:20:47.951+0000] {logging_mixin.py:188} INFO - [2024-02-12T07:20:47.951+0000] {dag.py:3823} INFO - Setting next_dagrun for hola_mundo to 2024-02-12 00:00:00+00:00, run_after=2024-02-13 00:00:00+00:00
+[2024-02-12T07:20:48.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prueba.py took 0.499 seconds

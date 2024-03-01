@@ -11,7 +11,7 @@ from airflow.operators.python_operator import BranchPythonOperator
 from random import randint
 from airflow.utils.trigger_rule import TriggerRule
 
-# Definir la configuración de la tarea DAG 
+# Definir la configuración de la tarea DAG, argumento end_date tambien disponible.
 default_args = {
     'owner': 'guille',
     'depends_on_past': False,

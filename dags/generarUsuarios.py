@@ -9,7 +9,7 @@ import requests
 from datetime import datetime, timedelta
 
 default_args = {
-    'owner': 'guille',
+    'owner': 'Guillermo Sánchez',
     'start_date': datetime(2024, 2, 28),
     'catchup': True,
     'email_on_failure': False,

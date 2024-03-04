@@ -10,6 +10,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.python_operator import BranchPythonOperator
 from random import randint
 from airflow.utils.trigger_rule import TriggerRule
+import requests
 
 # Definir la configuración de la tarea DAG, argumento end_date tambien disponible.
 default_args = {
@@ -47,7 +48,20 @@ def choose_branch(**kwargs):
 def run_this_first(**kwargs):
     # Tarea para el caso de la primera rama
     print("Ejecutando la primera rama")
-    
+    #Petición hacia el workflow de generarUsuarios.
+    try:
+        # Realizar la solicitud GET a la API ipinfo.io
+        response = requests.get("https://ipinfo.io")
+        
+        # Verificar si la solicitud fue exitosa
+        response.raise_for_status()
+        
+        # Imprimir la respuesta
+        print('Respuesta de ipinfo.io:', response.text)
+    except Exception as e:
+        # Manejar cualquier error que ocurra durante la solicitud
+        print('Error al realizar la solicitud:', str(e))
+
 #Define la tarea que se imprime cuando se ejecuta la segunda rama      
 def run_this_second(**kwargs):
     # Tarea para el caso de la segunda rama

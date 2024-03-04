@@ -1,3 +1,9 @@
+'''
+Propósito del Dag : Extraer par de divisas elegido.
+Fecha : 28/02/2024.
+Autor : Guillermo Sánchez.
+
+'''
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 import requests

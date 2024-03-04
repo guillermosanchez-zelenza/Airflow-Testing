@@ -19,8 +19,8 @@ default_args = {
     'email_on_retry': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=1),
-    'email':'guillermo.sanchezperez@zelenza.com'
-
+    'email':'guillermo.sanchezperez@zelenza.com',
+    'is_active':False #Dag desactivado.
 }
 
 def get_exchange_rate():

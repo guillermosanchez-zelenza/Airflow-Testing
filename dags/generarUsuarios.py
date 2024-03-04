@@ -6,7 +6,7 @@ Autor : Guillermo Sánchez.
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 
 default_args = {
     'owner': 'guille',

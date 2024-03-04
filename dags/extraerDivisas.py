@@ -1,8 +1,7 @@
 '''
 Propósito del Dag : Extraer par de divisas elegido.
-Fecha : 28/02/2024.
+Fecha : 04/03/2024.
 Autor : Guillermo Sánchez.
-
 '''
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
@@ -12,6 +11,7 @@ from datetime import datetime, timedelta
 default_args = {
     'owner': 'Guillermo Sánchez',
     'start_date': datetime(2024, 2, 28),
+    'catchup': True,
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,

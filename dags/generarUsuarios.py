@@ -10,8 +10,8 @@ from datetime import datetime, timedelta
 
 default_args = {
     'owner': 'Guillermo Sánchez',
-    'start_date': datetime(2024, 2, 28),
-    'catchup': True,
+    'start_date': datetime(2024, 3, 5),
+    'catchup': False,
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -29,7 +29,7 @@ def registrar_usuarios():
 
 with DAG('registro_usuarios_dag',
          default_args=default_args,
-         schedule_interval='0 12 * * *') as dag:
+         schedule_interval='0 11 * * *') as dag:
 
     registrar_usuarios_task = PythonOperator(
         task_id='registrar_usuarios',

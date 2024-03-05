@@ -42,7 +42,7 @@ def choose_branch(**kwargs):
     if randint(0, 1) == 0:
         return 'branch_a'
     else:
-        return 'branch_b'
+        return 'branch_a'
 
 #Define la tarea que se imprime cuando se ejecuta la primera rama      
 def run_this_first(**kwargs):

@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 default_args = {
     'owner': 'Guillermo Sánchez',
     'start_date': datetime(2024, 2, 28),
-    'catchup': True,
+    'catchup': False,
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
